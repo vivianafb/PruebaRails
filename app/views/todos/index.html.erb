@@ -4,12 +4,12 @@
         <div class="col-md-9 my-2">
             <div class="card card-body bg-light">
                 <p> <%= todo.description %> </p>
+                
                 <p> <%= todo.completed %> </p>
 
                 <div class="col-md-5">
                     <%= link_to 'Ver', todo, class: 'btn btn-primary' %>
                     <%= link_to 'Nuevo ToDo', todos_new_path, class: 'btn btn-success' %>
-                    <%= link_to 'Editar', class: 'btn btn-info' %>
                     <%= link_to 'Borrar', todo, method: :delete, class: 'btn btn-danger'  %>
 
                 </div>

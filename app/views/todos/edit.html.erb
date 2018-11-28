@@ -1,6 +1,16 @@
 <%= form_with model: @todo, local: true do |f| %>
-    <%= f.label :description, "Descripcion:" %>
-    <%= f.text_field :description %>
-    <%= f.check_box :completed %>
-    <%= f.submit class:"btn btn-primary" %>
+     <div class="row">
+        <div class="col-md-3 my-2">
+            <div class="card card-body bg-light">
+                <h3><%= f.label :description, "Descripcion:" %></h3>
+                <%= f.text_field :description %></br>
+                <%= f.check_box :completed %></br>
+                <%= f.submit 'Listo', class:"btn btn-primary" %>
+            </div>
+        </div>
+    </div>
 <% end %>
+<div class="col-md-3 my-2">
+
+<%= link_to 'Atrás', todos_path, class:"btn btn-secondary" %>
+</div>

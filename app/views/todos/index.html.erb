@@ -1,9 +1,17 @@
 <% @todos.each do |todo| %>
-    <div class="well">
-       <p> <%= todo.description %> </p>
+
+    <div class="row">
+        <div class="col-md-6 my-2">
+            <div class="card card-body bg-light">
+                <p> <%= todo.description %> </p>
+                <div class="col-md-5">
+                    <%= link_to 'Show', todo, class: 'btn btn-primary' %>
+                    <%= link_to 'New', todos_new_path, class: 'btn btn-success'  %>
+                </div>
+            </div>
+            
+        </div>  
     </div>
-    <%= link_to 'Show', todo, class: 'btn btn-primary' %>
-    <%= link_to 'New', todos_new_path, class: 'btn btn-success'  %>
 
 <% end %>
 

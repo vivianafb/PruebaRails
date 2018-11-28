@@ -1,8 +1,9 @@
 <% @todos.each do |todo| %>
     <div class="well">
-        <%= todo.description %>
+       <p> <%= todo.description %> </p>
     </div>
-    <%= link_to 'Show', todo %>
+    <%= link_to 'Show', todo, class: 'btn btn-primary' %>
+    <%= link_to 'New', todos_new_path, class: 'btn btn-success'  %>
 
 <% end %>
 

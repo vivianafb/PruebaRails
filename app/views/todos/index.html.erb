@@ -4,8 +4,11 @@
         <div class="col-md-10 my-2", style="top:60px ; left:20px">
             <div class="card card-body bg-light">
                 <p> <%= todo.description %> </p>
-                <p> <%= todo.completed %> </p>
-
+                <% if todo.completed? %>
+                    <ul> <%= "Completado" %> </ul>
+                    <% else !todo.completed? %>
+                    <ul> <%= "Incompleto" %> </ul>
+                <% end %>
                 <div class="col-md-5">
                     <%= link_to 'Ver', todo, class: 'btn btn-primary' %>
                     <%= link_to 'Editar', edit_path(todo), class: 'btn btn-success' %>

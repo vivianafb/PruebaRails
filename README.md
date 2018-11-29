@@ -3,10 +3,10 @@ En esta prueba creamos un CRUD de forma manual, que consiste en crear la ruta, e
 
 
 Paginas de ayuda: 
-https://codepen.io/IamManchanda/pen/eEXzOG
-https://getbootstrap.com/docs/4.0/layout/grid/
-https://getbootstrap.com/docs/4.1/getting-started/download/
-https://getbootstrap.com/docs/4.0/components/card/
+https://codepen.io/IamManchanda/pen/eEXzOG --
+https://getbootstrap.com/docs/4.0/layout/grid/ -- 
+https://getbootstrap.com/docs/4.1/getting-started/download/ --
+https://getbootstrap.com/docs/4.0/components/card/ --
 http://empieza.desafiolatam.com/cohorts/152/sections/4802
 
 
